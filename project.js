@@ -37,7 +37,7 @@ function renderProjectContent(project) {
         if (project.objective) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Objective</h2>
+                    <h2 class="section-title">Objetivo</h2>
                     <p class="section-text">${project.objective}</p>
                 </div>
             `;
@@ -46,7 +46,7 @@ function renderProjectContent(project) {
         if (project.segment) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Segment</h2>
+                    <h2 class="section-title">Segmento</h2>
                     <p class="section-text">${project.segment}</p>
                 </div>
             `;
@@ -55,7 +55,7 @@ function renderProjectContent(project) {
         if (project.role) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">My Role</h2>
+                    <h2 class="section-title">Mi Rol</h2>
                     <p class="section-text">${project.role}</p>
                 </div>
             `;
@@ -64,7 +64,7 @@ function renderProjectContent(project) {
         if (project.about) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">About the Project</h2>
+                    <h2 class="section-title">Sobre el Proyecto</h2>
                     <div class="section-text">${formatText(project.about)}</div>
                 </div>
             `;
@@ -74,7 +74,7 @@ function renderProjectContent(project) {
         if (project.kickoff) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Kick Off</h2>
+                    <h2 class="section-title">Inicio</h2>
                     <div class="section-text">${formatText(project.kickoff)}</div>
                 </div>
             `;
@@ -91,7 +91,7 @@ function renderProjectContent(project) {
         if (project.menuLayout) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">An scalable Menu layout for Micro Front End architecture</h2>
+                    <h2 class="section-title">Un diseño de menú escalable para arquitectura Micro Front End</h2>
                     <div class="section-text">${formatText(project.menuLayout)}</div>
                 </div>
             `;
@@ -108,7 +108,7 @@ function renderProjectContent(project) {
         if (project.discoveringUser) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Discovering the user</h2>
+                    <h2 class="section-title">Descubriendo al usuario</h2>
                     <div class="section-text">${formatText(project.discoveringUser)}</div>
                 </div>
             `;
@@ -117,7 +117,7 @@ function renderProjectContent(project) {
         if (project.coreScreens) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Core Screens Designed</h2>
+                    <h2 class="section-title">Pantallas Principales Diseñadas</h2>
                     <div class="section-text">${formatText(project.coreScreens)}</div>
                 </div>
             `;
@@ -138,7 +138,7 @@ function renderProjectContent(project) {
         if (project.creatingPolicy) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Creating a Policy</h2>
+                    <h2 class="section-title">Creando una Póliza</h2>
                     <div class="section-text">${formatText(project.creatingPolicy)}</div>
                 </div>
             `;
@@ -155,7 +155,7 @@ function renderProjectContent(project) {
         if (project.keyScreen) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">The key Screen</h2>
+                    <h2 class="section-title">La Pantalla Clave</h2>
                     <div class="section-text">${formatText(project.keyScreen)}</div>
                 </div>
             `;
@@ -233,7 +233,7 @@ function renderProjectContent(project) {
         if (project.physicalProduct) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">The physical product</h2>
+                    <h2 class="section-title">El producto físico</h2>
                     <div class="section-text">${formatText(project.physicalProduct)}</div>
                 </div>
             `;
@@ -254,7 +254,7 @@ function renderProjectContent(project) {
         if (project.digitalProduct) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">The digital product</h2>
+                    <h2 class="section-title">El producto digital</h2>
                     <div class="section-text">${formatText(project.digitalProduct)}</div>
                 </div>
             `;
@@ -275,7 +275,7 @@ function renderProjectContent(project) {
         if (project.beyondMVP) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Beyond the MVP</h2>
+                    <h2 class="section-title">Más allá del MVP</h2>
                     <div class="section-text">${formatText(project.beyondMVP)}</div>
                 </div>
             `;
@@ -302,7 +302,7 @@ function renderProjectContent(project) {
         if (project.archetypes) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Archetypes</h2>
+                    <h2 class="section-title">Arquetipos</h2>
                     <div class="section-text">${formatText(project.archetypes)}</div>
                 </div>
             `;
@@ -311,7 +311,7 @@ function renderProjectContent(project) {
         if (project.benchmark) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Benchmark</h2>
+                    <h2 class="section-title">Análisis Comparativo</h2>
                     <div class="section-text">${formatText(project.benchmark)}</div>
                 </div>
             `;
@@ -332,7 +332,7 @@ function renderProjectContent(project) {
         if (project.exploringAlternative) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Exploring an alternative data visualization model</h2>
+                    <h2 class="section-title">Explorando un modelo alternativo de visualización de datos</h2>
                     <div class="section-text">${formatText(project.exploringAlternative)}</div>
                 </div>
             `;
@@ -341,7 +341,7 @@ function renderProjectContent(project) {
         if (project.wireframing) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Wireframing & Prototyping</h2>
+                    <h2 class="section-title">Wireframing y Prototipado</h2>
                     <div class="section-text">${formatText(project.wireframing)}</div>
                 </div>
             `;
@@ -362,7 +362,7 @@ function renderProjectContent(project) {
         if (project.testing) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Testing</h2>
+                    <h2 class="section-title">Pruebas</h2>
                     <div class="section-text">${formatText(project.testing)}</div>
                 </div>
             `;
@@ -396,7 +396,7 @@ function renderProjectContent(project) {
         if (project.challenges && project.challenges.length > 0) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Challenges</h2>
+                    <h2 class="section-title">Desafíos</h2>
                     <ul class="challenges-list">
                         ${project.challenges.map(challenge => {
                             // Separar el título (antes de los dos puntos) de la descripción
@@ -416,7 +416,7 @@ function renderProjectContent(project) {
         if (project.keyLearning) {
             html += `
                 <div class="content-section">
-                    <h2 class="section-title">Key Learning</h2>
+                    <h2 class="section-title">Aprendizaje Clave</h2>
                     <div class="section-text">${formatText(project.keyLearning)}</div>
                 </div>
             `;
@@ -426,7 +426,7 @@ function renderProjectContent(project) {
         if (project.visitUrl) {
             html += `
                 <div class="content-section" style="margin-top: var(--spacing-xl);">
-                    <a href="${project.visitUrl}" target="_blank" rel="noopener noreferrer" class="visit-button">Visit ⇨</a>
+                    <a href="${project.visitUrl}" target="_blank" rel="noopener noreferrer" class="visit-button">Visitar ⇨</a>
                 </div>
             `;
         }
