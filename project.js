@@ -69,6 +69,26 @@ function renderProjectContent(project) {
                 </div>
             `;
         }
+
+        if (project.sections && project.sections.length > 0) {
+            project.sections.forEach((section) => {
+                html += `
+                    <div class="content-section">
+                        <h2 class="section-title">${section.title}</h2>
+                        <div class="section-text">${formatText(section.text)}</div>
+                    </div>
+                `;
+                if (section.image) {
+                    const caption = section.caption || section.title;
+                    html += `
+                        <figure class="phone-shot">
+                            <img src="${section.image}" alt="${caption}" loading="lazy">
+                            ${section.caption ? `<figcaption>${section.caption}</figcaption>` : ''}
+                        </figure>
+                    `;
+                }
+            });
+        }
         
         // Secciones adicionales para Insurance UI
         if (project.kickoff) {

@@ -1,6 +1,43 @@
 // Datos de los proyectos
 const projects = [
     {
+        id: 'renova-picking',
+        title: 'Renova Picking',
+        subtitle: 'Product Design + Dev (2026)',
+        image: 'images/renova_picking_cover.png',
+        objective: 'Que en el pasillo se pueda identificar un repuesto, contar una ubicación y registrar un ingreso de proveedor sin salir de una sola aplicación.',
+        segment: 'Distribución mayorista de repuestos automotrices. Uso interno, en el depósito.',
+        role: 'Diseño de producto y desarrollo. La armé para el uso diario del depósito: decidir un código, contar una ubicación y dejar registro de lo que entra.',
+        about: 'En el depósito de Renova, identificar, contar y recibir pasan en una sola aplicación.\n\nEl sistema de pedidos ya mostraba el estado de una venta. En el pasillo la pregunta es concreta: de todos los códigos de una misma pieza, cuál está en el estante y conviene llevar. Un filtro puede figurar como original, como marca y como el código de otro auto que usa la misma pieza. Quien prepara el pedido decide eso con la pieza en la mano.\n\nEl inventario se caía en el medio del día. Contar una ubicación, anotar la diferencia y corregir el lugar de la pieza eran pasos separados, y el relevamiento quedaba para después. Lo que entraba de un proveedor se registraba con una foto, sin fecha ni nombre al lado.\n\nLas tres tareas quedaron en tres pantallas con la misma barra y el mismo teclado. En el depósito casi todo lo que se tipea es un código: números, y ABC cuando el código trae letras. Pasar de identificar a contar o a recibir es cambiar de pestaña.',
+        sections: [
+            {
+                title: 'Identificar',
+                image: 'images/renova_picking_identificar.png',
+                caption: 'CA9410: stock, ubicación, ventas del año y cada código equivalente.',
+                text: 'Se tipea el código y la pantalla responde con lo que hace falta para decidir. Arriba están el stock, la ubicación y las ventas de los últimos 12 meses. Un punto de color dice si ese stock está adecuado. Debajo, la descripción de la pieza y todos los códigos con los que también se la conoce.\n\nCada equivalente trae su propio stock y, si tiene, su ubicación. El verde es lo que se puede tomar. El cero en rojo es un código que no conviene ir a buscar. En CA9410 el stock está en C24, y el equivalente 19347807 también está en esa ubicación. El resto de la familia está en cero.\n\nEl teclado queda a la vista. Números para el código, ABC cuando trae letras, y la barra para los separadores.'
+            },
+            {
+                title: 'Inventario',
+                image: 'images/renova_picking_inventario.png',
+                caption: 'Conteo de C34, con saltos de cantidad y reasignación de ubicación.',
+                text: 'El conteo entra por ubicación. El encabezado muestra cuál está abierta, en este caso C34 dentro del Depósito Único, y qué porcentaje del relevamiento ya se hizo.\n\nLa cantidad se carga con un arco de saltos: 1, 4, 6, 10 y 12, más un paso para cantidades mayores. El más y el menos ajustan de a uno. La cifra queda grande, a la izquierda, para leerla sin acercar el teléfono.\n\nSi la pieza figura en otro lugar, se reasigna en el mismo ítem. CF9323 pasa de GGG a C34 con la confirmación al lado del código. Corregir la ubicación es parte del conteo.\n\nAbajo queda el tablero del turno: cuántos faltan contar, cuántos ya se contaron y cuántos aparecieron sin registro. Desde ahí se exporta el resultado o se abre una ubicación nueva. Si hay un conteo abierto, la pestaña lo marca.'
+            },
+            {
+                title: 'Proveedores',
+                image: 'images/renova_picking_proveedores.png',
+                caption: 'Foto, tamaño del pedido, fecha y proveedor en un solo envío.',
+                text: 'En la puerta no siempre se puede abrir el bulto línea por línea. Esta pantalla deja una constancia corta: una foto, el tamaño del pedido y quién lo mandó.\n\nSe elige cámara o galería, se marca S, M o XL, la fecha, el tipo y el proveedor, y se envía. La foto queda atada al ingreso. El botón de enviar cierra la ficha en el mismo orden en que se completa.'
+            }
+        ],
+        challenges: [
+            'La misma pieza, varios códigos: Un filtro no es un ítem único. La pantalla de identificar muestra la familia de equivalentes y el stock de cada uno, y se queda en una sola ficha.',
+            'Contar parado: Tipear de a una unidad con el teclado del teléfono frena el relevamiento. El arco de cantidades y el teclado propio dejan la cuenta a un toque.',
+            'La ubicación se corrige en el conteo: Si el sistema dice GGG y la pieza está en C34, dejarlo anotado para después mantiene el error. La reasignación quedó en el mismo ítem.',
+            'El ingreso necesita más que una foto: La imagen viaja con el tamaño del pedido, la fecha y el proveedor. Esos datos quedan juntos en el envío.'
+        ],
+        keyLearning: 'En el depósito la pantalla sirve si acorta la decisión del momento. Stock, ubicación y equivalentes juntos para elegir qué llevar. Saltos de cantidad para contar. Foto, tamaño y proveedor para dejar registro de lo que entra.'
+    },
+    {
         id: 'pancha-revancha',
         title: 'Pancha Revancha',
         subtitle: 'Full Stack Dev + Design (2024)',
