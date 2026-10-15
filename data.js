@@ -1,6 +1,48 @@
 // Datos de los proyectos
 const projects = [
     {
+        id: 'freequence',
+        title: 'FREEquence',
+        subtitle: 'Desarrollo de marca',
+        image: 'images/freequence.png',
+        detailImage: 'images/freequence_manifiesto.png',
+        detailImages: [
+            'images/freequence_move.png'
+        ],
+        objective: 'Desarrollar la marca de FREEquence Club y contarla en el sitio: un wellness & social club que no se explique como una lista de servicios.',
+        segment: 'Wellness & social club — Punta Chica.',
+        role: 'Desarrollo de marca.',
+        about: 'Desarrollo de marca para FREEquence Club: contar una historia, no un listado de servicios.\n\nEl club junta entrenamiento, alimentación, danza, lounge y coworking. Si eso se muestra como una grilla de servicios, la marca no se entiende. La historia cabe en tres palabras —Move. Reset. Connect.— y el sitio las recorre en ese orden: entrenar el cuerpo, renovar la energía, compartir la vida.\n\nCada capítulo conserva su lugar. Punto Training, Wholefood y Ecstatic Floor no se mezclan. Vuelven a la misma frase: distintas formas, una misma frecuencia.\n\nEl punto de vista está en el manifiesto. No te decimos cómo vivir. Creamos el espacio para que encuentres lo que resuena con vos. Esa frase ordena todo lo demás: el club no prescribe un camino, abre uno.',
+        challenges: [
+            'Contar una historia, no un listado: El club tiene muchas caras. El riesgo era mostrarlas como servicios sueltos. Move, Reset y Connect las ponen en secuencia: cuerpo, energía y encuentro.',
+            'Una postura, no un eslogan: La marca no dice cómo vivir. El manifiesto deja esa idea en una frase y el resto del sitio la sostiene, desde el hero hasta la membresía.',
+            'Distintas formas, una misma frecuencia: Entrenamiento, comida, danza y lounge conservan su nombre. La marca los une sin volverlos iguales.'
+        ],
+        keyLearning: 'Una marca con muchas ofertas se entiende cuando tiene un orden. En FREEquence, tres palabras alcanzan para recorrer el club y una frase alcanza para decir desde dónde se habla.',
+        visitUrl: 'https://www.freequence.club/'
+    },
+    {
+        id: 'hamm',
+        title: 'HAMM',
+        subtitle: 'WEB DESIGN',
+        image: 'images/hamm.png',
+        detailImages: [
+            'images/hamm_servicios.png',
+            'images/hamm_alianzas.png'
+        ],
+        objective: 'Diseñar y construir el sitio de HAMM, una agencia que necesita verse al mismo tiempo como representación comercial y como trade marketing.',
+        segment: 'Agencia comercial — representación comercial, trade marketing y producción POP.',
+        role: 'Diseño y desarrollo del sitio, usando IA para armarlo.',
+        about: 'Sitio institucional para una agencia que hace representación comercial y trade marketing.\n\nLo armé con IA a partir de un diseño original. El trabajo fue despegarme de esa referencia: la herramienta aceleró la construcción, y las decisiones de qué mostrar siguieron siendo de diseño.\n\nHAMM abre cartera y, a la vez, ejecuta en el punto de venta y produce material POP. Mostrar las dos caras en una sola página era lo difícil. El hero lo resuelve en parte: un mosaico de productos y marcas se mueve detrás del nombre, y ese movimiento le da dinámica a toda la página. Ahí conviven la representación de marcas y el trade. El resto queda sobrio —servicios, texto institucional, logos— para que el mensaje comercial se lea sin competir con la animación.',
+        challenges: [
+            'Dos caras en una sola página: La agencia no es solo trade ni solo representación comercial. El hero junta las dos: el mosaico pone el punto de venta en movimiento y el título deja clara la representación y la consultoría.',
+            'Despegarse del diseño original: Había una referencia previa. Trabajando con IA, la tentación era reproducirla. El trabajo fue usarla como punto de partida y después apartarme, hasta que la página tuviera un ritmo propio: movimiento arriba, sobriedad en el resto.',
+            'IA para armar: La IA sirvió para construir la web con velocidad. La jerarquía —qué se anima, qué queda quieto, cómo se nombran los servicios— siguió siendo una decisión de diseño.'
+        ],
+        keyLearning: 'El movimiento alcanza si está en un solo lugar. En HAMM, el hero carga la energía de las dos caras de la agencia y el resto de la página se mantiene sobrio para que esa energía se lea.',
+        visitUrl: 'https://www.hamm.ar/'
+    },
+    {
         id: 'renova-picking',
         title: 'Renova Picking',
         subtitle: 'Product Design + Dev (2026)',
